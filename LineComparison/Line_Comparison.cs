@@ -14,13 +14,25 @@ namespace LineComparison
         public int y2;
         public void LineComparison()
         {
-
+            int a1 = x1;
+            int b1 = y1;
+            int a2 = x2;
+            int b2 = y2;
 
             double lenght;
+            double lenght1;
 
             lenght = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
 
             Console.WriteLine("Length of a given Line is: " + lenght);
+
+            lenght1 = Math.Sqrt(Math.Pow((a2 - a1), 2) + Math.Pow((b2 - b1), 2));
+            Console.WriteLine("Length of a given Line is: " + lenght1);
+
+            if (lenght1 == lenght)
+            {
+                Console.WriteLine("Both lines are Equal.");
+            }
         }
     }
 }
