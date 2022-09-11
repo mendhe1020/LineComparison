@@ -33,6 +33,14 @@ namespace LineComparison
             {
                 Console.WriteLine("Both lines are Equal.");
             }
+            else if (lenght > lenght1)
+            {
+                Console.WriteLine("Line with co-ordinates x1,y1,x2,y2 is greater and other one os smaller.");
+            }
+            else
+            {
+                Console.WriteLine("Line with co-ordinates a1,b1,a2,b2 is greater and other one is smaller.");
+            }
         }
     }
 }
